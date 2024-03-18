@@ -1,0 +1,41 @@
+
+  header {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    color: rgb(42, 22, 158);
+    border-bottom: 4px solid #0c6dec;
+  }
+  
+  section {
+    height: 100vh;
+    background-color: rgb(73, 145, 252);
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    color: white;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  button {
+    background:#0c6dec;
+    color: blue;
+  }
+  
+  #searchArea {
+    border-right: #0c6dec 4px solid;
+  }
+  
+  h4 {
+    align-self: center;
+  }
