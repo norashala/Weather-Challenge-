@@ -186,7 +186,6 @@ function displayCurrentWeather(weatherData) {
 
 // Function to display 5-day forecast
 function displayForecast(city) {
-    const apiKey = 'YOUR_API_KEY'; // Replace 'YOUR_API_KEY' with your actual API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
@@ -206,17 +205,4 @@ function displayForecast(city) {
                 `;
             });
         })
-        .catch(error => console.error('Error fetching forecast data:', error));
 }
-
-// Function to handle form submission
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const city = document.getElementById('cityInput').value;
-    getWeatherData(city)
-        .then(weatherData => {
-            displayCurrentWeather(weatherData);
-            displayForecast(city);
-        });
-        
-    });
